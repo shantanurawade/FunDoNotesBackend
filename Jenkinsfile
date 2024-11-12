@@ -7,6 +7,12 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/shantanurawade/FunDoNotesBackend.git'
             }
         }
+        stage('Syncing application to server'){
+            steps{
+                echo 'Syncing code from git...'
+                
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building...'
