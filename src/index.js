@@ -36,8 +36,8 @@ connectDb().
         app.use('/api-docs',
             swaggerUi.serve,
             swaggerUi.setup(specs));   
-        app.listen(process.env.PORT, (req, res) => { 
-            console.log("Port is listening to : ", process.env.PORT);
+        app.listen(8000, (req, res) => { 
+            console.log("Port is listening to : ",8000);
         })
     }).catch((error) => {
         console.log("Error while connecting db", error);
