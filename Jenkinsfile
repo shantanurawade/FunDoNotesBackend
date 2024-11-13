@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh 'ssh ubuntu@172.31.13.136 npm run dev'
+                sh 'ssh ubuntu@13.203.78.22 npm run dev'
             }
         }
     }
