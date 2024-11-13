@@ -16,13 +16,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'npm install' 
+                // sh 'npm install' 
                
             }
         }
         stage('Deploy'){
             steps{
-                echo ''
+                sh 'ssh ubuntu@172.31.13.136 npm run dev'
             }
         }
     }
